@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='text/javascript' src='scriptcep.js'></script>
+    <title>Uso de API em JavaScript</title>
+</head>
+<body>
+    <h1> BUSCA ENDEREÇO</h1>
+    <form>
+        <label>Digite o CEP</label>
+        <input type="text" id="cep" size="15" maxlength="8" autocomplete="off">
+        <button type="button" onclick="consultaCEP()">Consultar</button>
+    </form>
+    <br/>
+
+    <div id='resposta'> </div>    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDP - JavScript</title>
+</head>
+<body>
+    <h1>Programa Olá você!</h1>
+
+    <form>
+        <p>Nome: <input type="text" id="nome">
+        <input type="button" value="Mostrar" onclick="Ola()"></p>
+        <input type="reset" value="Limpar">
+    </form>
+    <script>
+        function Ola() {
+            var nome = document.getElementById("nome").value
+            document.getElementById("resposta").textContent = "Olá " + nome
+        }
+    </script>
+    <br>
+    <hr>
+    <br>
+    <p id="resposta"> </p>
+    
+</body>
+</html>

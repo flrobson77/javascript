@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM - Integração de HTML com Javascript</title>
+    <script>
+        function mudaCor(novacor) {
+            var elemento = document.getElementById("texto")
+            elemento.style.color = novacor
+        }
+    </script>
+</head>
+<body>
+    <p id="texto">Dominando o DOM</p>
+    <button onclick="mudaCor('blue')">Azul</button>
+    <button onclick="mudaCor('red')">Vermelho</button>
+    <button onclick="mudaCor('green')">Verde</button>    
+</body>
+</html>
