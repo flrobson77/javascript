@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/ifsp.jpeg">
+        <title>LDP - Javascript - Entrada e Saída</title>        
+    </head>
+    <body>
+    <p id="mensagem"></p>
+    <script>
+        var NOME = prompt("Usuário, informa seu nome:");        
+        console.log(`Olá ${NOME}`);
+        document.getElementById("mensagem").textContent = "Olá " + NOME;       
+    </script>   
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/ifsp.jpeg">
+        <title>LDP - Javascript - Operadores Matemático</title>        
+    </head>
+    <body>
+        <h1> Javascript - Operadores Matemáticos </h1>
+    <form>
+        <label>Parcela 1:</label> <input type="text" id="valor01" size="10"><br>
+        <label>Parcela 2:</label> <input type="text" id="valor02" size="10"><br>
+        <input type="button" onclick="calcula()" value="Calcular">
+        <input type="reset" value="Limpar">
+    </form>
+    <br>
+    <hr>
+    <br>
+    <p id="soma"></p>
+    <p id="subtracao"></p>
+    <p id="produto"></p>
+    <p id="quociente"></p>
+    <p id="resto"></p>
+    <p id="potencia"></p>
+    
+    <script>
+        function calcula(){
+          var N1 = Number(document.getElementById("valor01").value);
+          var N2 = Number(document.getElementById("valor02").value);
+          document.getElementById("soma").textContent = `Adição: ${N1} + ${N2} = ${N1+N2}`;
+          document.getElementById("subtracao").textContent = `Subtração: ${N1} - ${N2} = ${N1-N2}`;
+          document.getElementById("produto").textContent = `Multiplicação: ${N1} * ${N2} = ${N1*N2}`;
+          document.getElementById("quociente").textContent = `Divisão: ${N1} / ${N2} = ${N1/N2}`;
+          document.getElementById("resto").textContent = `Resto da divisão: ${N1} % ${N2} = ${N1%N2}`;
+          document.getElementById("potencia").textContent = `Potencia: ${N1} ^ ${N2} = ${N1**N2}`;
+        }
+    </script>   
+    </body>
+</html>
